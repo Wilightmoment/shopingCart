@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+
+    <title>六角血拚賣賣</title>
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="shoppingCart.html">
+            <i class="fas fa-heart text-info"></i>
+            六角血拚賣賣
+        </a>
+
+        <!-- 購物車內的數量(Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fas fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">金牌西裝</td>
+                                <td class="align-middle">1</td>
+                                <td class="align-middle">$520</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">金牌女裝</td>
+                                <td class="align-middle">1</td>
+                                <td class="align-middle">$400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter p-3">
+                <h1 class="display-4">買到吃手手</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#clothes" data-toggle="list" class="list-group-item list-group-item-action active">衣服</a>
+                    <a href="#shoes" data-toggle="list" class="list-group-item list-group-item-action">鞋子</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="clothes">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 border-0 text-center box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b17958c40e777065643cb65954bede79&auto=format&fit=crop&w=1050&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary disabled">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 border-0 text-center box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b17958c40e777065643cb65954bede79&auto=format&fit=crop&w=1050&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary disabled">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 text-center border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b17958c40e777065643cb65954bede79&auto=format&fit=crop&w=1050&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary disabled">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 text-center border-0 box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b17958c40e777065643cb65954bede79&auto=format&fit=crop&w=1050&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="shoes">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 border-0 text-center box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c15305e72c1ead61b6b23d4b0041de66&auto=format&fit=crop&w=1051&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary disabled">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card d-flex h-100 border-0 text-center box-shadow">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c15305e72c1ead61b6b23d4b0041de66&auto=format&fit=crop&w=1051&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer text-center border-top-0">
+                                        <div class="btn-group btn-group-sm">
+                                            <buttom class="btn btn-outline-secondary">SM</buttom>
+                                            <buttom class="btn btn-outline-secondary disabled">M</buttom>
+                                            <buttom class="btn btn-outline-secondary">XL</buttom>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角血拚賣賣</li>
+                <li class="list-inline-item text-info">
+                    <i class="fab fa-instagram mr-1"></i>Instagrame</li>
+                <li class="list-inline-item text-info">
+                    <i class="fab fa-facebook mr-1"></i>Facebook</li>
+                <li class="list-inline-item text-info">About</li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
